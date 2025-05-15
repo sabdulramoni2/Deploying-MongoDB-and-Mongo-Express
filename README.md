@@ -21,7 +21,13 @@ This project demonstrates building a .
 ## **Deploying MongoDB and MongoExpress**
 - Created MongoDB Deployment
 - Created Secret for Mongo Credentials
+  
+  ![image](https://github.com/user-attachments/assets/ca8c8afd-e725-4a42-920e-704c45b9787d)
+
 - Created MongoDB Internal Service
+
+  ![image](https://github.com/user-attachments/assets/a72db9cc-2d3a-4024-8f81-65cd7b808bfa)
+
 - Created MongoExpress Deployment
 - Created ConfigMap for DB Server URL
 - Created Mongo Express External Service
