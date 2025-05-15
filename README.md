@@ -16,10 +16,6 @@ This project demonstrates building a containerized API management system for que
 ---
 
 ## **Useful Links:**
-- **Sports API Key**: Sign up for a free account and subscription & obtain your API Key at serpapi.com
-- **AWS Account**: Create an AWS Account & have basic understanding of ECS, API Gateway, Docker & Python
-- **AWS CLI Installed and Configured**: Install & configure AWS CLI to programatically interact with AWS
-- **Serpapi Library**: Install Serpapi library in local environment "pip install google-search-results"
-- **Docker CLI and Desktop Installed**: To build & push container images
+- **Mongo Express Docker Image**:  https://hub.docker.com/_/mongo-express
 
 ---
