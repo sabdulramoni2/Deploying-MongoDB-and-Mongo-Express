@@ -15,6 +15,31 @@ This project demonstrates building a web application (Mango-express)  and its da
 - Created MongoExpress Deployment
 - Created ConfigMap for DB Server URL
 - Created Mongo Express External Service
+- 2.	Created MongoDB Deployment
+a.	Configure the deployment file to include port 27017 which is MongoDB port
+b.	Added env variable with name and values for the username and password.
+c.	The values will be in the secret config file
+3.	Created secret config file
+a.	The value of the secrets (username and password) is base 64 encoded
+b.	          echo -n ‘username’ | base64  =  values will be paste in secret file
+c.	          echo -n ‘password’ | base64  =  values will be paste in secret file
+d.	Always create secret before Deployments since you want Deployment to reference it.
+e.	The secret is reference using the “Value from” “secretKeyRef” 
+4.	Create secret and then deployment
+5.	Create service config file for MongoDB
+6.	Created MongoExpress Deployment
+a.	Which database it should connect to? MongoDB address.
+b.	Which credentials to authenticate (username and password)
+7.	Create configmap configuration file
+a.	This where we reference the database url (address)
+b.	Create configmap deployment 
+c.	Create MongoExpress
+8.	Accessing MongoExpress from the browser.
+a.	Create MongoExpress service
+b.	Under selector specify the service type to be LoadBalancer
+c.	Specify NodePort under ports; values are from 30000-32767 
+d.	Use minikube service “service name “to access the browser.
+
  
 ---
 
