@@ -14,21 +14,21 @@ This project demonstrates building a web application (Mango-express)  and its da
   - Added env variable with name and values for the username and password.
   - The values will be in the secret config file
 -	Created secret config file
-  - The value of the secrets (username and password) is base 64 encoded
-  - echo -n ‘username’ | base64  =  values will be paste in secret file
-  - echo -n ‘password’ | base64  =  values will be paste in secret file
-  - Always create secret before Deployments since you want Deployment to reference it.
-  - The secret is reference using the “Value from” “secretKeyRef” 
+   - The value of the secrets (username and password) is base 64 encoded
+   - echo -n ‘username’ | base64  =  values will be paste in secret file
+   - echo -n ‘password’ | base64  =  values will be paste in secret file
+   - Always create secret before Deployments since you want Deployment to reference it.
+   - The secret is reference using the “Value from” “secretKeyRef” 
 - Create secret and then deployment
 - Create service config file for MongoDB
-6.	Created MongoExpress Deployment
-a.	Which database it should connect to? MongoDB address.
-b.	Which credentials to authenticate (username and password)
-7.	Create configmap configuration file
-a.	This where we reference the database url (address)
-b.	Create configmap deployment 
-c.	Create MongoExpress
-8.	Accessing MongoExpress from the browser.
+- Created MongoExpress Deployment
+    - Which database it should connect to? MongoDB address.
+    - Which credentials to authenticate (username and password)
+-	Create configmap configuration file
+    -	This where we reference the database url (address)
+    - Create configmap deployment 
+    -	Create MongoExpress
+-	Accessing MongoExpress from the browser.
 a.	Create MongoExpress service
 b.	Under selector specify the service type to be LoadBalancer
 c.	Specify NodePort under ports; values are from 30000-32767 
