@@ -10,15 +10,9 @@ This project demonstrates building a web application (Mango-express)  and its da
   
 ## **Deploying MongoDB and MongoExpress**
 - Created MongoDB Deployment
-- Created Secret for Mongo Credentials
-- Created MongoDB Internal Service
-- Created MongoExpress Deployment
-- Created ConfigMap for DB Server URL
-- Created Mongo Express External Service
-- 2.	Created MongoDB Deployment
-a.	Configure the deployment file to include port 27017 which is MongoDB port
-b.	Added env variable with name and values for the username and password.
-c.	The values will be in the secret config file
+  a.	Configure the deployment file to include port 27017 which is MongoDB port
+  b.	Added env variable with name and values for the username and password.
+  c.	The values will be in the secret config file
 3.	Created secret config file
 a.	The value of the secrets (username and password) is base 64 encoded
 b.	          echo -n ‘username’ | base64  =  values will be paste in secret file
