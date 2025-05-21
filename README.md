@@ -39,7 +39,7 @@ This project demonstrates building a web application (Mango-express)  and its da
  
 ---
 
-## **Deploying MongoDB and MongoExpress**
+## **Diagrammatic Presentation**
 - Created MongoDB Deployment
 - Created Secret for Mongo Credentials
   
