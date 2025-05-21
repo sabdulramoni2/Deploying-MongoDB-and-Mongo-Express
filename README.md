@@ -15,8 +15,10 @@ This project demonstrates building a web application (Mango-express)  and its da
   - The values will be in the secret config file
 -	Created secret config file
      - The value of the secrets (username and password) is base 64 encoded
-     - echo -n ‘username’ | base64  =  values will be paste in secret file
-     - echo -n ‘password’ | base64  =  values will be paste in secret file
+       ```
+           echo -n ‘username’ | base64  =  values will be paste in secret file
+          echo -n ‘password’ | base64  =  values will be paste in secret file
+       ```
      - Always create secret before Deployments since you want Deployment to reference it.
      - The secret is reference using the “Value from” “secretKeyRef” 
 - Create secret and then deployment
